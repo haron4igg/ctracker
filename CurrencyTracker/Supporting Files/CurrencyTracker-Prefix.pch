@@ -1,0 +1,31 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifdef DEBUG
+    #define DLog(...) NSLog(__VA_ARGS__)
+#else
+    #define DLog(...) /* */
+#endif
+
+
+#import "Constants.h"
+#import "NSString+Extensions.h"
+#import "NSDictionary+Extensions.h"
+#import "NSError+Additions.h"
+#import "NSCollection+Extensions.h"
+#import "NSString+Extensions.h"
+#import "NSNumber+PercentageAdditions.h"

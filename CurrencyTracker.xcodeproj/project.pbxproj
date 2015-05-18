@@ -1,0 +1,920 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C2A53581B0A12C70002118B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C2A535A1B0A12C70002118B /* Localizable.strings */; };
+		1C2A53701B0A53D10002118B /* CTItemPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2A536F1B0A53D10002118B /* CTItemPickerViewController.m */; };
+		1C3314101B05FFE6007DC310 /* CurrencyTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C33140F1B05FFE6007DC310 /* CurrencyTrackerTests.m */; };
+		1C3314291B0600FB007DC310 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C33141E1B0600FB007DC310 /* Images.xcassets */; };
+		1C33142A1B0600FB007DC310 /* CTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3314211B0600FB007DC310 /* CTAppDelegate.m */; };
+		1C33142D1B0600FB007DC310 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3314261B0600FB007DC310 /* main.m */; };
+		1C33144B1B060DB8007DC310 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C3314471B060DB8007DC310 /* Lato-Black.ttf */; };
+		1C33144C1B060DB8007DC310 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C3314481B060DB8007DC310 /* Lato-Bold.ttf */; };
+		1C33144D1B060DB8007DC310 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C3314491B060DB8007DC310 /* Lato-MediumItalic.ttf */; };
+		1C33144E1B060DB8007DC310 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C33144A1B060DB8007DC310 /* Lato-Regular.ttf */; };
+		1C70C2F71B0624DD00E3E422 /* CTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C2F61B0624DD00E3E422 /* CTMainViewController.m */; };
+		1C70C5A51B062DEE00E3E422 /* CTCoreService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C5A41B062DEE00E3E422 /* CTCoreService.m */; };
+		1C70C6661B063C5E00E3E422 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6651B063C5E00E3E422 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1C70C6771B063ECC00E3E422 /* CTJsonratesRemoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C66A1B063ECC00E3E422 /* CTJsonratesRemoteManager.m */; };
+		1C70C6781B063ECC00E3E422 /* CTJsonCurrency.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C66E1B063ECC00E3E422 /* CTJsonCurrency.m */; };
+		1C70C6791B063ECC00E3E422 /* CTGetCurrencyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6711B063ECC00E3E422 /* CTGetCurrencyRequest.m */; };
+		1C70C67A1B063ECC00E3E422 /* CTGetCurrencyHistoryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6731B063ECC00E3E422 /* CTGetCurrencyHistoryRequest.m */; };
+		1C70C67B1B063ECC00E3E422 /* CTGetCurrencyHistoryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6761B063ECC00E3E422 /* CTGetCurrencyHistoryResponse.m */; };
+		1C70C68E1B063FB600E3E422 /* JsonEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C67F1B063FB600E3E422 /* JsonEntity.m */; };
+		1C70C68F1B063FB600E3E422 /* JsonEntityDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6811B063FB600E3E422 /* JsonEntityDescription.m */; };
+		1C70C6901B063FB600E3E422 /* JsonMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6831B063FB600E3E422 /* JsonMapper.m */; };
+		1C70C6911B063FB600E3E422 /* JsonRemoteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6851B063FB600E3E422 /* JsonRemoteManager.m */; };
+		1C70C6921B063FB600E3E422 /* JsonRemoteOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6871B063FB600E3E422 /* JsonRemoteOperation.m */; };
+		1C70C6931B063FB600E3E422 /* RemoteEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C68B1B063FB600E3E422 /* RemoteEntity.m */; };
+		1C70C6941B063FB600E3E422 /* RemoteEntityDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C68D1B063FB600E3E422 /* RemoteEntityDescription.m */; };
+		1C70C6C51B0640AC00E3E422 /* NSCollection+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6981B0640AC00E3E422 /* NSCollection+Extensions.m */; };
+		1C70C6C61B0640AC00E3E422 /* NSData+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C69A1B0640AC00E3E422 /* NSData+Extensions.m */; };
+		1C70C6C71B0640AC00E3E422 /* NSDate+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C69C1B0640AC00E3E422 /* NSDate+Extensions.m */; };
+		1C70C6C81B0640AC00E3E422 /* NSDictionary+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C69E1B0640AC00E3E422 /* NSDictionary+Extensions.m */; };
+		1C70C6CA1B0640AC00E3E422 /* NSString+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6A21B0640AC00E3E422 /* NSString+Extensions.m */; };
+		1C70C6CB1B0640AC00E3E422 /* DateUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6A41B0640AC00E3E422 /* DateUtilities.m */; };
+		1C70C6CC1B0640AC00E3E422 /* OperationQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6A71B0640AC00E3E422 /* OperationQueue.m */; };
+		1C70C6CD1B0640AC00E3E422 /* Serializable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6A91B0640AC00E3E422 /* Serializable.m */; };
+		1C70C6CE1B0640AC00E3E422 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6AB1B0640AC00E3E422 /* Utilities.m */; };
+		1C70C6CF1B0640AC00E3E422 /* NSError+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6AD1B0640AC00E3E422 /* NSError+Additions.m */; };
+		1C70C6D01B0640AC00E3E422 /* BaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6B01B0640AC00E3E422 /* BaseOperation.m */; };
+		1C70C6D11B0640AC00E3E422 /* BlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6B21B0640AC00E3E422 /* BlockOperation.m */; };
+		1C70C6D91B0640AD00E3E422 /* PropertyTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6C41B0640AC00E3E422 /* PropertyTransformer.m */; };
+		1C70C6DF1B0644D300E3E422 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6DE1B0644D300E3E422 /* Constants.m */; };
+		1C70C6E51B06491900E3E422 /* EntityImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6E41B06491900E3E422 /* EntityImp.m */; };
+		1C70C6E81B064C6A00E3E422 /* JsonResponseContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C70C6E71B064C6A00E3E422 /* JsonResponseContainer.m */; };
+		1CE525161B0665400074BED7 /* CTDoublePropertyTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE525151B0665400074BED7 /* CTDoublePropertyTransformer.m */; };
+		1CE525191B0665C60074BED7 /* CTUtcDatePropertyTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE525181B0665C60074BED7 /* CTUtcDatePropertyTransformer.m */; };
+		1CE5251C1B066C840074BED7 /* CTGetCurrencyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5251B1B066C840074BED7 /* CTGetCurrencyResponse.m */; };
+		1CE525291B0686770074BED7 /* NSNumber+PercentageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE525281B0686770074BED7 /* NSNumber+PercentageAdditions.m */; };
+		1CE5252C1B068D620074BED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE5252B1B068D620074BED7 /* Main.storyboard */; };
+		1CE525381B09F7460074BED7 /* CTGUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE525371B09F7460074BED7 /* CTGUIUtils.m */; };
+		1CE5253E1B09F78F0074BED7 /* AnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5253B1B09F78F0074BED7 /* AnimatedTransitioning.m */; };
+		1CE5253F1B09F78F0074BED7 /* TransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5253D1B09F78F0074BED7 /* TransitionDelegate.m */; };
+		1CE525491B09FD170074BED7 /* CTConvertDirectionImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE525481B09FD170074BED7 /* CTConvertDirectionImpl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C33140A1B05FFE6007DC310 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C3313E81B05FFE6007DC310 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C3313EF1B05FFE6007DC310;
+			remoteInfo = CurrencyTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C2A53591B0A12C70002118B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1C2A535B1B0A12D40002118B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1C2A536E1B0A53D10002118B /* CTItemPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTItemPickerViewController.h; sourceTree = "<group>"; };
+		1C2A536F1B0A53D10002118B /* CTItemPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTItemPickerViewController.m; sourceTree = "<group>"; };
+		1C3313F01B05FFE6007DC310 /* CurrencyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3314091B05FFE6007DC310 /* CurrencyTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C33140E1B05FFE6007DC310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C33140F1B05FFE6007DC310 /* CurrencyTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrencyTrackerTests.m; sourceTree = "<group>"; };
+		1C33141E1B0600FB007DC310 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1C3314201B0600FB007DC310 /* CTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAppDelegate.h; sourceTree = "<group>"; };
+		1C3314211B0600FB007DC310 /* CTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAppDelegate.m; sourceTree = "<group>"; };
+		1C3314251B0600FB007DC310 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C3314261B0600FB007DC310 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C3314471B060DB8007DC310 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		1C3314481B060DB8007DC310 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		1C3314491B060DB8007DC310 /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		1C33144A1B060DB8007DC310 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		1C70C2F51B0624DD00E3E422 /* CTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMainViewController.h; sourceTree = "<group>"; };
+		1C70C2F61B0624DD00E3E422 /* CTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMainViewController.m; sourceTree = "<group>"; };
+		1C70C4211B0627BC00E3E422 /* CurrencyTracker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CurrencyTracker-Prefix.pch"; sourceTree = "<group>"; };
+		1C70C4721B0629BD00E3E422 /* CTRemoteDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRemoteDataManager.h; sourceTree = "<group>"; };
+		1C70C5A31B062DEE00E3E422 /* CTCoreService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCoreService.h; sourceTree = "<group>"; };
+		1C70C5A41B062DEE00E3E422 /* CTCoreService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCoreService.m; sourceTree = "<group>"; };
+		1C70C6641B063C5E00E3E422 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		1C70C6651B063C5E00E3E422 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		1C70C6691B063ECC00E3E422 /* CTJsonratesRemoteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTJsonratesRemoteManager.h; sourceTree = "<group>"; };
+		1C70C66A1B063ECC00E3E422 /* CTJsonratesRemoteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTJsonratesRemoteManager.m; sourceTree = "<group>"; };
+		1C70C66D1B063ECC00E3E422 /* CTJsonCurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTJsonCurrency.h; sourceTree = "<group>"; };
+		1C70C66E1B063ECC00E3E422 /* CTJsonCurrency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTJsonCurrency.m; sourceTree = "<group>"; };
+		1C70C6701B063ECC00E3E422 /* CTGetCurrencyRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGetCurrencyRequest.h; sourceTree = "<group>"; };
+		1C70C6711B063ECC00E3E422 /* CTGetCurrencyRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGetCurrencyRequest.m; sourceTree = "<group>"; };
+		1C70C6721B063ECC00E3E422 /* CTGetCurrencyHistoryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGetCurrencyHistoryRequest.h; sourceTree = "<group>"; };
+		1C70C6731B063ECC00E3E422 /* CTGetCurrencyHistoryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGetCurrencyHistoryRequest.m; sourceTree = "<group>"; };
+		1C70C6751B063ECC00E3E422 /* CTGetCurrencyHistoryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGetCurrencyHistoryResponse.h; sourceTree = "<group>"; };
+		1C70C6761B063ECC00E3E422 /* CTGetCurrencyHistoryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGetCurrencyHistoryResponse.m; sourceTree = "<group>"; };
+		1C70C67E1B063FB600E3E422 /* JsonEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonEntity.h; sourceTree = "<group>"; };
+		1C70C67F1B063FB600E3E422 /* JsonEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonEntity.m; sourceTree = "<group>"; };
+		1C70C6801B063FB600E3E422 /* JsonEntityDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonEntityDescription.h; sourceTree = "<group>"; };
+		1C70C6811B063FB600E3E422 /* JsonEntityDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonEntityDescription.m; sourceTree = "<group>"; };
+		1C70C6821B063FB600E3E422 /* JsonMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonMapper.h; sourceTree = "<group>"; };
+		1C70C6831B063FB600E3E422 /* JsonMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonMapper.m; sourceTree = "<group>"; };
+		1C70C6841B063FB600E3E422 /* JsonRemoteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonRemoteManager.h; sourceTree = "<group>"; };
+		1C70C6851B063FB600E3E422 /* JsonRemoteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonRemoteManager.m; sourceTree = "<group>"; };
+		1C70C6861B063FB600E3E422 /* JsonRemoteOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonRemoteOperation.h; sourceTree = "<group>"; };
+		1C70C6871B063FB600E3E422 /* JsonRemoteOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonRemoteOperation.m; sourceTree = "<group>"; };
+		1C70C6881B063FB600E3E422 /* EntityDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityDescription.h; sourceTree = "<group>"; };
+		1C70C6891B063FB600E3E422 /* ResponseContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseContainer.h; sourceTree = "<group>"; };
+		1C70C68A1B063FB600E3E422 /* RemoteEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteEntity.h; sourceTree = "<group>"; };
+		1C70C68B1B063FB600E3E422 /* RemoteEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteEntity.m; sourceTree = "<group>"; };
+		1C70C68C1B063FB600E3E422 /* RemoteEntityDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteEntityDescription.h; sourceTree = "<group>"; };
+		1C70C68D1B063FB600E3E422 /* RemoteEntityDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteEntityDescription.m; sourceTree = "<group>"; };
+		1C70C6971B0640AC00E3E422 /* NSCollection+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCollection+Extensions.h"; sourceTree = "<group>"; };
+		1C70C6981B0640AC00E3E422 /* NSCollection+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCollection+Extensions.m"; sourceTree = "<group>"; };
+		1C70C6991B0640AC00E3E422 /* NSData+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Extensions.h"; sourceTree = "<group>"; };
+		1C70C69A1B0640AC00E3E422 /* NSData+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extensions.m"; sourceTree = "<group>"; };
+		1C70C69B1B0640AC00E3E422 /* NSDate+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extensions.h"; sourceTree = "<group>"; };
+		1C70C69C1B0640AC00E3E422 /* NSDate+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extensions.m"; sourceTree = "<group>"; };
+		1C70C69D1B0640AC00E3E422 /* NSDictionary+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extensions.h"; sourceTree = "<group>"; };
+		1C70C69E1B0640AC00E3E422 /* NSDictionary+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extensions.m"; sourceTree = "<group>"; };
+		1C70C6A11B0640AC00E3E422 /* NSString+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extensions.h"; sourceTree = "<group>"; };
+		1C70C6A21B0640AC00E3E422 /* NSString+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extensions.m"; sourceTree = "<group>"; };
+		1C70C6A31B0640AC00E3E422 /* DateUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtilities.h; sourceTree = "<group>"; };
+		1C70C6A41B0640AC00E3E422 /* DateUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtilities.m; sourceTree = "<group>"; };
+		1C70C6A51B0640AC00E3E422 /* DictionaryRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryRepresentation.h; sourceTree = "<group>"; };
+		1C70C6A61B0640AC00E3E422 /* OperationQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationQueue.h; sourceTree = "<group>"; };
+		1C70C6A71B0640AC00E3E422 /* OperationQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationQueue.m; sourceTree = "<group>"; };
+		1C70C6A81B0640AC00E3E422 /* Serializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serializable.h; sourceTree = "<group>"; };
+		1C70C6A91B0640AC00E3E422 /* Serializable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Serializable.m; sourceTree = "<group>"; };
+		1C70C6AA1B0640AC00E3E422 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		1C70C6AB1B0640AC00E3E422 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		1C70C6AC1B0640AC00E3E422 /* NSError+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Additions.h"; sourceTree = "<group>"; };
+		1C70C6AD1B0640AC00E3E422 /* NSError+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Additions.m"; sourceTree = "<group>"; };
+		1C70C6AF1B0640AC00E3E422 /* BaseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseOperation.h; sourceTree = "<group>"; };
+		1C70C6B01B0640AC00E3E422 /* BaseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseOperation.m; sourceTree = "<group>"; };
+		1C70C6B11B0640AC00E3E422 /* BlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockOperation.h; sourceTree = "<group>"; };
+		1C70C6B21B0640AC00E3E422 /* BlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockOperation.m; sourceTree = "<group>"; };
+		1C70C6C31B0640AC00E3E422 /* PropertyTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyTransformer.h; sourceTree = "<group>"; };
+		1C70C6C41B0640AC00E3E422 /* PropertyTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyTransformer.m; sourceTree = "<group>"; };
+		1C70C6DD1B0644D300E3E422 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		1C70C6DE1B0644D300E3E422 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		1C70C6E11B06491900E3E422 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		1C70C6E31B06491900E3E422 /* EntityImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityImp.h; sourceTree = "<group>"; };
+		1C70C6E41B06491900E3E422 /* EntityImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityImp.m; sourceTree = "<group>"; };
+		1C70C6E61B064C6A00E3E422 /* JsonResponseContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonResponseContainer.h; sourceTree = "<group>"; };
+		1C70C6E71B064C6A00E3E422 /* JsonResponseContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonResponseContainer.m; sourceTree = "<group>"; };
+		1C70C6E91B06628800E3E422 /* CTCurrency.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTCurrency.h; sourceTree = "<group>"; };
+		1CE525141B0665400074BED7 /* CTDoublePropertyTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDoublePropertyTransformer.h; sourceTree = "<group>"; };
+		1CE525151B0665400074BED7 /* CTDoublePropertyTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDoublePropertyTransformer.m; sourceTree = "<group>"; };
+		1CE525171B0665C60074BED7 /* CTUtcDatePropertyTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTUtcDatePropertyTransformer.h; sourceTree = "<group>"; };
+		1CE525181B0665C60074BED7 /* CTUtcDatePropertyTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTUtcDatePropertyTransformer.m; sourceTree = "<group>"; };
+		1CE5251A1B066C840074BED7 /* CTGetCurrencyResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGetCurrencyResponse.h; sourceTree = "<group>"; };
+		1CE5251B1B066C840074BED7 /* CTGetCurrencyResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGetCurrencyResponse.m; sourceTree = "<group>"; };
+		1CE525271B0686770074BED7 /* NSNumber+PercentageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+PercentageAdditions.h"; sourceTree = "<group>"; };
+		1CE525281B0686770074BED7 /* NSNumber+PercentageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+PercentageAdditions.m"; sourceTree = "<group>"; };
+		1CE5252B1B068D620074BED7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1CE5252D1B0698100074BED7 /* CTJsonError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTJsonError.h; sourceTree = "<group>"; };
+		1CE525361B09F7460074BED7 /* CTGUIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGUIUtils.h; sourceTree = "<group>"; };
+		1CE525371B09F7460074BED7 /* CTGUIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGUIUtils.m; sourceTree = "<group>"; };
+		1CE5253A1B09F78F0074BED7 /* AnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitioning.h; sourceTree = "<group>"; };
+		1CE5253B1B09F78F0074BED7 /* AnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedTransitioning.m; sourceTree = "<group>"; };
+		1CE5253C1B09F78F0074BED7 /* TransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionDelegate.h; sourceTree = "<group>"; };
+		1CE5253D1B09F78F0074BED7 /* TransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionDelegate.m; sourceTree = "<group>"; };
+		1CE525421B09FB300074BED7 /* CTConvertDirection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTConvertDirection.h; sourceTree = "<group>"; };
+		1CE525471B09FD170074BED7 /* CTConvertDirectionImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTConvertDirectionImpl.h; sourceTree = "<group>"; };
+		1CE525481B09FD170074BED7 /* CTConvertDirectionImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTConvertDirectionImpl.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C3313ED1B05FFE6007DC310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3314061B05FFE6007DC310 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C3313E71B05FFE6007DC310 = {
+			isa = PBXGroup;
+			children = (
+				1C3313F21B05FFE6007DC310 /* CurrencyTracker */,
+				1C33140C1B05FFE6007DC310 /* CurrencyTrackerTests */,
+				1C3313F11B05FFE6007DC310 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C3313F11B05FFE6007DC310 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C3313F01B05FFE6007DC310 /* CurrencyTracker.app */,
+				1C3314091B05FFE6007DC310 /* CurrencyTrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C3313F21B05FFE6007DC310 /* CurrencyTracker */ = {
+			isa = PBXGroup;
+			children = (
+				1C33141F1B0600FB007DC310 /* Sources */,
+				1C3314191B0600FB007DC310 /* Resources */,
+				1C3314241B0600FB007DC310 /* Supporting Files */,
+			);
+			path = CurrencyTracker;
+			sourceTree = "<group>";
+		};
+		1C33140C1B05FFE6007DC310 /* CurrencyTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C33140F1B05FFE6007DC310 /* CurrencyTrackerTests.m */,
+				1C33140D1B05FFE6007DC310 /* Supporting Files */,
+			);
+			path = CurrencyTrackerTests;
+			sourceTree = "<group>";
+		};
+		1C33140D1B05FFE6007DC310 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C33140E1B05FFE6007DC310 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1C3314191B0600FB007DC310 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5252B1B068D620074BED7 /* Main.storyboard */,
+				1C3314461B060DB8007DC310 /* Fonts */,
+				1C3314391B060D4E007DC310 /* Localized */,
+				1C33141E1B0600FB007DC310 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C33141F1B0600FB007DC310 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1C3314201B0600FB007DC310 /* CTAppDelegate.h */,
+				1C3314211B0600FB007DC310 /* CTAppDelegate.m */,
+				1C70C6621B063C5E00E3E422 /* ThirdParty */,
+				1C70C42E1B06292600E3E422 /* Model */,
+				1C70C2F41B0624AE00E3E422 /* Core */,
+				1CE525261B06860B0074BED7 /* Extensions */,
+				1C70C2F31B0624A500E3E422 /* GUI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1C3314241B0600FB007DC310 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C4211B0627BC00E3E422 /* CurrencyTracker-Prefix.pch */,
+				1C3314251B0600FB007DC310 /* Info.plist */,
+				1C3314261B0600FB007DC310 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1C3314391B060D4E007DC310 /* Localized */ = {
+			isa = PBXGroup;
+			children = (
+				1C2A535A1B0A12C70002118B /* Localizable.strings */,
+			);
+			path = Localized;
+			sourceTree = "<group>";
+		};
+		1C3314461B060DB8007DC310 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1C3314471B060DB8007DC310 /* Lato-Black.ttf */,
+				1C3314481B060DB8007DC310 /* Lato-Bold.ttf */,
+				1C3314491B060DB8007DC310 /* Lato-MediumItalic.ttf */,
+				1C33144A1B060DB8007DC310 /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1C70C2F31B0624A500E3E422 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				1CE525311B09F6660074BED7 /* Helpers */,
+				1C70C2F51B0624DD00E3E422 /* CTMainViewController.h */,
+				1C70C2F61B0624DD00E3E422 /* CTMainViewController.m */,
+				1C2A536E1B0A53D10002118B /* CTItemPickerViewController.h */,
+				1C2A536F1B0A53D10002118B /* CTItemPickerViewController.m */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		1C70C2F41B0624AE00E3E422 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C5A31B062DEE00E3E422 /* CTCoreService.h */,
+				1C70C5A41B062DEE00E3E422 /* CTCoreService.m */,
+				1C70C4721B0629BD00E3E422 /* CTRemoteDataManager.h */,
+				1C70C6671B063ECC00E3E422 /* Remote */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1C70C42E1B06292600E3E422 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CE525461B09FCCD0074BED7 /* Implementation */,
+				1CE525421B09FB300074BED7 /* CTConvertDirection.h */,
+				1C70C6E91B06628800E3E422 /* CTCurrency.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C70C6621B063C5E00E3E422 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				1CE525391B09F78F0074BED7 /* Transition Delegate */,
+				1C70C6951B0640AC00E3E422 /* Commons */,
+				1C70C6631B063C5E00E3E422 /* JSONKit */,
+				1C70C67C1B063FB600E3E422 /* RemoteTools */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		1C70C6631B063C5E00E3E422 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C6641B063C5E00E3E422 /* JSONKit.h */,
+				1C70C6651B063C5E00E3E422 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		1C70C6671B063ECC00E3E422 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C6681B063ECC00E3E422 /* Jsonrates */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		1C70C6681B063ECC00E3E422 /* Jsonrates */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C6691B063ECC00E3E422 /* CTJsonratesRemoteManager.h */,
+				1C70C66A1B063ECC00E3E422 /* CTJsonratesRemoteManager.m */,
+				1CE525131B0665040074BED7 /* Transformers */,
+				1C70C66C1B063ECC00E3E422 /* Model */,
+			);
+			path = Jsonrates;
+			sourceTree = "<group>";
+		};
+		1C70C66C1B063ECC00E3E422 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5252D1B0698100074BED7 /* CTJsonError.h */,
+				1C70C66D1B063ECC00E3E422 /* CTJsonCurrency.h */,
+				1C70C66E1B063ECC00E3E422 /* CTJsonCurrency.m */,
+				1C70C66F1B063ECC00E3E422 /* Requests */,
+				1C70C6741B063ECC00E3E422 /* Responses */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C70C66F1B063ECC00E3E422 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C6701B063ECC00E3E422 /* CTGetCurrencyRequest.h */,
+				1C70C6711B063ECC00E3E422 /* CTGetCurrencyRequest.m */,
+				1C70C6721B063ECC00E3E422 /* CTGetCurrencyHistoryRequest.h */,
+				1C70C6731B063ECC00E3E422 /* CTGetCurrencyHistoryRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		1C70C6741B063ECC00E3E422 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5251A1B066C840074BED7 /* CTGetCurrencyResponse.h */,
+				1CE5251B1B066C840074BED7 /* CTGetCurrencyResponse.m */,
+				1C70C6751B063ECC00E3E422 /* CTGetCurrencyHistoryResponse.h */,
+				1C70C6761B063ECC00E3E422 /* CTGetCurrencyHistoryResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		1C70C67C1B063FB600E3E422 /* RemoteTools */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C6E01B06491900E3E422 /* Model */,
+				1C70C67D1B063FB600E3E422 /* JSON */,
+				1C70C6881B063FB600E3E422 /* EntityDescription.h */,
+				1C70C6891B063FB600E3E422 /* ResponseContainer.h */,
+				1C70C68A1B063FB600E3E422 /* RemoteEntity.h */,
+				1C70C68B1B063FB600E3E422 /* RemoteEntity.m */,
+				1C70C68C1B063FB600E3E422 /* RemoteEntityDescription.h */,
+				1C70C68D1B063FB600E3E422 /* RemoteEntityDescription.m */,
+			);
+			path = RemoteTools;
+			sourceTree = "<group>";
+		};
+		1C70C67D1B063FB600E3E422 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C67E1B063FB600E3E422 /* JsonEntity.h */,
+				1C70C67F1B063FB600E3E422 /* JsonEntity.m */,
+				1C70C6801B063FB600E3E422 /* JsonEntityDescription.h */,
+				1C70C6811B063FB600E3E422 /* JsonEntityDescription.m */,
+				1C70C6821B063FB600E3E422 /* JsonMapper.h */,
+				1C70C6831B063FB600E3E422 /* JsonMapper.m */,
+				1C70C6841B063FB600E3E422 /* JsonRemoteManager.h */,
+				1C70C6851B063FB600E3E422 /* JsonRemoteManager.m */,
+				1C70C6861B063FB600E3E422 /* JsonRemoteOperation.h */,
+				1C70C6871B063FB600E3E422 /* JsonRemoteOperation.m */,
+				1C70C6E61B064C6A00E3E422 /* JsonResponseContainer.h */,
+				1C70C6E71B064C6A00E3E422 /* JsonResponseContainer.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		1C70C6951B0640AC00E3E422 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C6DD1B0644D300E3E422 /* Constants.h */,
+				1C70C6DE1B0644D300E3E422 /* Constants.m */,
+				1C70C6A31B0640AC00E3E422 /* DateUtilities.h */,
+				1C70C6A41B0640AC00E3E422 /* DateUtilities.m */,
+				1C70C6A51B0640AC00E3E422 /* DictionaryRepresentation.h */,
+				1C70C6A61B0640AC00E3E422 /* OperationQueue.h */,
+				1C70C6A71B0640AC00E3E422 /* OperationQueue.m */,
+				1C70C6A81B0640AC00E3E422 /* Serializable.h */,
+				1C70C6A91B0640AC00E3E422 /* Serializable.m */,
+				1C70C6AA1B0640AC00E3E422 /* Utilities.h */,
+				1C70C6AB1B0640AC00E3E422 /* Utilities.m */,
+				1C70C6AC1B0640AC00E3E422 /* NSError+Additions.h */,
+				1C70C6AD1B0640AC00E3E422 /* NSError+Additions.m */,
+				1C70C6961B0640AC00E3E422 /* Extensions */,
+				1C70C6AE1B0640AC00E3E422 /* Operations */,
+				1C70C6B71B0640AC00E3E422 /* Transformers */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		1C70C6961B0640AC00E3E422 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C6971B0640AC00E3E422 /* NSCollection+Extensions.h */,
+				1C70C6981B0640AC00E3E422 /* NSCollection+Extensions.m */,
+				1C70C6991B0640AC00E3E422 /* NSData+Extensions.h */,
+				1C70C69A1B0640AC00E3E422 /* NSData+Extensions.m */,
+				1C70C69B1B0640AC00E3E422 /* NSDate+Extensions.h */,
+				1C70C69C1B0640AC00E3E422 /* NSDate+Extensions.m */,
+				1C70C69D1B0640AC00E3E422 /* NSDictionary+Extensions.h */,
+				1C70C69E1B0640AC00E3E422 /* NSDictionary+Extensions.m */,
+				1C70C6A11B0640AC00E3E422 /* NSString+Extensions.h */,
+				1C70C6A21B0640AC00E3E422 /* NSString+Extensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1C70C6AE1B0640AC00E3E422 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C6AF1B0640AC00E3E422 /* BaseOperation.h */,
+				1C70C6B01B0640AC00E3E422 /* BaseOperation.m */,
+				1C70C6B11B0640AC00E3E422 /* BlockOperation.h */,
+				1C70C6B21B0640AC00E3E422 /* BlockOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		1C70C6B71B0640AC00E3E422 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C6C31B0640AC00E3E422 /* PropertyTransformer.h */,
+				1C70C6C41B0640AC00E3E422 /* PropertyTransformer.m */,
+			);
+			path = Transformers;
+			sourceTree = "<group>";
+		};
+		1C70C6E01B06491900E3E422 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C6E11B06491900E3E422 /* Entity.h */,
+				1C70C6E21B06491900E3E422 /* Implementation */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C70C6E21B06491900E3E422 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				1C70C6E31B06491900E3E422 /* EntityImp.h */,
+				1C70C6E41B06491900E3E422 /* EntityImp.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		1CE525131B0665040074BED7 /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				1CE525141B0665400074BED7 /* CTDoublePropertyTransformer.h */,
+				1CE525151B0665400074BED7 /* CTDoublePropertyTransformer.m */,
+				1CE525171B0665C60074BED7 /* CTUtcDatePropertyTransformer.h */,
+				1CE525181B0665C60074BED7 /* CTUtcDatePropertyTransformer.m */,
+			);
+			path = Transformers;
+			sourceTree = "<group>";
+		};
+		1CE525261B06860B0074BED7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1CE525271B0686770074BED7 /* NSNumber+PercentageAdditions.h */,
+				1CE525281B0686770074BED7 /* NSNumber+PercentageAdditions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1CE525311B09F6660074BED7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1CE525361B09F7460074BED7 /* CTGUIUtils.h */,
+				1CE525371B09F7460074BED7 /* CTGUIUtils.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1CE525391B09F78F0074BED7 /* Transition Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5253A1B09F78F0074BED7 /* AnimatedTransitioning.h */,
+				1CE5253B1B09F78F0074BED7 /* AnimatedTransitioning.m */,
+				1CE5253C1B09F78F0074BED7 /* TransitionDelegate.h */,
+				1CE5253D1B09F78F0074BED7 /* TransitionDelegate.m */,
+			);
+			path = "Transition Delegate";
+			sourceTree = "<group>";
+		};
+		1CE525461B09FCCD0074BED7 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				1CE525471B09FD170074BED7 /* CTConvertDirectionImpl.h */,
+				1CE525481B09FD170074BED7 /* CTConvertDirectionImpl.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C3313EF1B05FFE6007DC310 /* CurrencyTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C3314131B05FFE6007DC310 /* Build configuration list for PBXNativeTarget "CurrencyTracker" */;
+			buildPhases = (
+				1C3313EC1B05FFE6007DC310 /* Sources */,
+				1C3313ED1B05FFE6007DC310 /* Frameworks */,
+				1C3313EE1B05FFE6007DC310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CurrencyTracker;
+			productName = CurrencyTracker;
+			productReference = 1C3313F01B05FFE6007DC310 /* CurrencyTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C3314081B05FFE6007DC310 /* CurrencyTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C3314161B05FFE6007DC310 /* Build configuration list for PBXNativeTarget "CurrencyTrackerTests" */;
+			buildPhases = (
+				1C3314051B05FFE6007DC310 /* Sources */,
+				1C3314061B05FFE6007DC310 /* Frameworks */,
+				1C3314071B05FFE6007DC310 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C33140B1B05FFE6007DC310 /* PBXTargetDependency */,
+			);
+			name = CurrencyTrackerTests;
+			productName = CurrencyTrackerTests;
+			productReference = 1C3314091B05FFE6007DC310 /* CurrencyTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C3313E81B05FFE6007DC310 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = CT;
+				TargetAttributes = {
+					1C3313EF1B05FFE6007DC310 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					1C3314081B05FFE6007DC310 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 1C3313EF1B05FFE6007DC310;
+					};
+				};
+			};
+			buildConfigurationList = 1C3313EB1B05FFE6007DC310 /* Build configuration list for PBXProject "CurrencyTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				en,
+				ru,
+			);
+			mainGroup = 1C3313E71B05FFE6007DC310;
+			productRefGroup = 1C3313F11B05FFE6007DC310 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C3313EF1B05FFE6007DC310 /* CurrencyTracker */,
+				1C3314081B05FFE6007DC310 /* CurrencyTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C3313EE1B05FFE6007DC310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE5252C1B068D620074BED7 /* Main.storyboard in Resources */,
+				1C33144B1B060DB8007DC310 /* Lato-Black.ttf in Resources */,
+				1C33144C1B060DB8007DC310 /* Lato-Bold.ttf in Resources */,
+				1C2A53581B0A12C70002118B /* Localizable.strings in Resources */,
+				1C33144D1B060DB8007DC310 /* Lato-MediumItalic.ttf in Resources */,
+				1C33144E1B060DB8007DC310 /* Lato-Regular.ttf in Resources */,
+				1C3314291B0600FB007DC310 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3314071B05FFE6007DC310 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C3313EC1B05FFE6007DC310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C70C6781B063ECC00E3E422 /* CTJsonCurrency.m in Sources */,
+				1C70C6CB1B0640AC00E3E422 /* DateUtilities.m in Sources */,
+				1C33142D1B0600FB007DC310 /* main.m in Sources */,
+				1CE5253F1B09F78F0074BED7 /* TransitionDelegate.m in Sources */,
+				1C70C6CF1B0640AC00E3E422 /* NSError+Additions.m in Sources */,
+				1C2A53701B0A53D10002118B /* CTItemPickerViewController.m in Sources */,
+				1CE525381B09F7460074BED7 /* CTGUIUtils.m in Sources */,
+				1C70C6CC1B0640AC00E3E422 /* OperationQueue.m in Sources */,
+				1CE525291B0686770074BED7 /* NSNumber+PercentageAdditions.m in Sources */,
+				1C70C6E81B064C6A00E3E422 /* JsonResponseContainer.m in Sources */,
+				1C33142A1B0600FB007DC310 /* CTAppDelegate.m in Sources */,
+				1CE5253E1B09F78F0074BED7 /* AnimatedTransitioning.m in Sources */,
+				1CE525191B0665C60074BED7 /* CTUtcDatePropertyTransformer.m in Sources */,
+				1C70C6C61B0640AC00E3E422 /* NSData+Extensions.m in Sources */,
+				1C70C6921B063FB600E3E422 /* JsonRemoteOperation.m in Sources */,
+				1C70C6D01B0640AC00E3E422 /* BaseOperation.m in Sources */,
+				1C70C6E51B06491900E3E422 /* EntityImp.m in Sources */,
+				1C70C6D11B0640AC00E3E422 /* BlockOperation.m in Sources */,
+				1C70C6CA1B0640AC00E3E422 /* NSString+Extensions.m in Sources */,
+				1C70C6C71B0640AC00E3E422 /* NSDate+Extensions.m in Sources */,
+				1C70C6931B063FB600E3E422 /* RemoteEntity.m in Sources */,
+				1C70C6C81B0640AC00E3E422 /* NSDictionary+Extensions.m in Sources */,
+				1CE525491B09FD170074BED7 /* CTConvertDirectionImpl.m in Sources */,
+				1CE525161B0665400074BED7 /* CTDoublePropertyTransformer.m in Sources */,
+				1C70C67B1B063ECC00E3E422 /* CTGetCurrencyHistoryResponse.m in Sources */,
+				1C70C6941B063FB600E3E422 /* RemoteEntityDescription.m in Sources */,
+				1C70C68F1B063FB600E3E422 /* JsonEntityDescription.m in Sources */,
+				1C70C5A51B062DEE00E3E422 /* CTCoreService.m in Sources */,
+				1C70C6661B063C5E00E3E422 /* JSONKit.m in Sources */,
+				1C70C6CD1B0640AC00E3E422 /* Serializable.m in Sources */,
+				1C70C6791B063ECC00E3E422 /* CTGetCurrencyRequest.m in Sources */,
+				1C70C6901B063FB600E3E422 /* JsonMapper.m in Sources */,
+				1C70C6D91B0640AD00E3E422 /* PropertyTransformer.m in Sources */,
+				1CE5251C1B066C840074BED7 /* CTGetCurrencyResponse.m in Sources */,
+				1C70C6C51B0640AC00E3E422 /* NSCollection+Extensions.m in Sources */,
+				1C70C6CE1B0640AC00E3E422 /* Utilities.m in Sources */,
+				1C70C67A1B063ECC00E3E422 /* CTGetCurrencyHistoryRequest.m in Sources */,
+				1C70C2F71B0624DD00E3E422 /* CTMainViewController.m in Sources */,
+				1C70C6911B063FB600E3E422 /* JsonRemoteManager.m in Sources */,
+				1C70C6771B063ECC00E3E422 /* CTJsonratesRemoteManager.m in Sources */,
+				1C70C6DF1B0644D300E3E422 /* Constants.m in Sources */,
+				1C70C68E1B063FB600E3E422 /* JsonEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C3314051B05FFE6007DC310 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C3314101B05FFE6007DC310 /* CurrencyTrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C33140B1B05FFE6007DC310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C3313EF1B05FFE6007DC310 /* CurrencyTracker */;
+			targetProxy = 1C33140A1B05FFE6007DC310 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C2A535A1B0A12C70002118B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C2A53591B0A12C70002118B /* en */,
+				1C2A535B1B0A12D40002118B /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C3314111B05FFE6007DC310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1C3314121B05FFE6007DC310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C3314141B05FFE6007DC310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CurrencyTracker/Supporting Files/CurrencyTracker-Prefix.pch";
+				INFOPLIST_FILE = "CurrencyTracker/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C3314151B05FFE6007DC310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CurrencyTracker/Supporting Files/CurrencyTracker-Prefix.pch";
+				INFOPLIST_FILE = "CurrencyTracker/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1C3314171B05FFE6007DC310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CurrencyTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurrencyTracker.app/CurrencyTracker";
+			};
+			name = Debug;
+		};
+		1C3314181B05FFE6007DC310 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CurrencyTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CurrencyTracker.app/CurrencyTracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C3313EB1B05FFE6007DC310 /* Build configuration list for PBXProject "CurrencyTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3314111B05FFE6007DC310 /* Debug */,
+				1C3314121B05FFE6007DC310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C3314131B05FFE6007DC310 /* Build configuration list for PBXNativeTarget "CurrencyTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3314141B05FFE6007DC310 /* Debug */,
+				1C3314151B05FFE6007DC310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C3314161B05FFE6007DC310 /* Build configuration list for PBXNativeTarget "CurrencyTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C3314171B05FFE6007DC310 /* Debug */,
+				1C3314181B05FFE6007DC310 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C3313E81B05FFE6007DC310 /* Project object */;
+}

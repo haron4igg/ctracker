@@ -1,0 +1,29 @@
+/*
+ Localizable.strings
+ CurrencyTracker
+ 
+ Created by Igor Reshetnikov on 5/15/15.
+ Copyright (c) 2015 CT. All rights reserved.
+ */
+
+
+"kMVCurrencyDifferenceMessageFormat" = "Со вчерашнего дня %@\n%@ на %@";
+"kMVFell"   = "упал";
+"kMVGrew"   = "вырос";
+
+"kPersent" = "процент";
+"kPersent0" = "процентов";
+"kPersent2" = "процента";
+
+
+"USD" = "доллар";
+"EUR" = "евро";
+"RUB" = "рубль";
+
+
+"kMVServiceError" = "Сервис не доступен. Проверьте интернет соединение или попробуйте позже.";
+
+"kMVUpdating" = "ОБНОВЛЯЕМ...";
+"kMVUpdated" = "ОБНОВЛЕНО В %@";
+
+"kMVDirectionFormat" = "%@ → %@";
