@@ -227,6 +227,7 @@
         //self.pickerContainerView.hidden = NO;
         self.closePickerGestureRecognizer = [UITapGestureRecognizer new];
         self.closePickerGestureRecognizer.cancelsTouchesInView = NO;
+        self.closePickerGestureRecognizer.delegate = self;
         [self.closePickerGestureRecognizer addTarget:self action:@selector(showCurrencySelector:)];
         [self.view addGestureRecognizer:self.closePickerGestureRecognizer];
         
