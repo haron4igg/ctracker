@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1H1-Bl-hHh">
-                                <rect key="frame" x="16" y="442" width="22" height="14"/>
+                                <rect key="frame" x="16" y="442" width="21" height="14"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="14" id="bGJ-Sh-MO1"/>
                                 </constraints>
@@ -142,6 +142,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="menuButton" width="22" height="14"/>
+        <image name="menuButton" width="21" height="13"/>
     </resources>
 </document>

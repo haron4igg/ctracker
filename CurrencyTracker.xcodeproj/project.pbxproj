@@ -54,8 +54,6 @@
 		1CE525291B0686770074BED7 /* NSNumber+PercentageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE525281B0686770074BED7 /* NSNumber+PercentageAdditions.m */; };
 		1CE5252C1B068D620074BED7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE5252B1B068D620074BED7 /* Main.storyboard */; };
 		1CE525381B09F7460074BED7 /* CTGUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE525371B09F7460074BED7 /* CTGUIUtils.m */; };
-		1CE5253E1B09F78F0074BED7 /* AnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5253B1B09F78F0074BED7 /* AnimatedTransitioning.m */; };
-		1CE5253F1B09F78F0074BED7 /* TransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE5253D1B09F78F0074BED7 /* TransitionDelegate.m */; };
 		1CE525491B09FD170074BED7 /* CTConvertDirectionImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE525481B09FD170074BED7 /* CTConvertDirectionImpl.m */; };
 /* End PBXBuildFile section */
 
@@ -168,10 +166,6 @@
 		1CE5252D1B0698100074BED7 /* CTJsonError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTJsonError.h; sourceTree = "<group>"; };
 		1CE525361B09F7460074BED7 /* CTGUIUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTGUIUtils.h; sourceTree = "<group>"; };
 		1CE525371B09F7460074BED7 /* CTGUIUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGUIUtils.m; sourceTree = "<group>"; };
-		1CE5253A1B09F78F0074BED7 /* AnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitioning.h; sourceTree = "<group>"; };
-		1CE5253B1B09F78F0074BED7 /* AnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedTransitioning.m; sourceTree = "<group>"; };
-		1CE5253C1B09F78F0074BED7 /* TransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionDelegate.h; sourceTree = "<group>"; };
-		1CE5253D1B09F78F0074BED7 /* TransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionDelegate.m; sourceTree = "<group>"; };
 		1CE525421B09FB300074BED7 /* CTConvertDirection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTConvertDirection.h; sourceTree = "<group>"; };
 		1CE525471B09FD170074BED7 /* CTConvertDirectionImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTConvertDirectionImpl.h; sourceTree = "<group>"; };
 		1CE525481B09FD170074BED7 /* CTConvertDirectionImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTConvertDirectionImpl.m; sourceTree = "<group>"; };
@@ -330,7 +324,6 @@
 		1C70C6621B063C5E00E3E422 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				1CE525391B09F78F0074BED7 /* Transition Delegate */,
 				1C70C6951B0640AC00E3E422 /* Commons */,
 				1C70C6631B063C5E00E3E422 /* JSONKit */,
 				1C70C67C1B063FB600E3E422 /* RemoteTools */,
@@ -541,17 +534,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		1CE525391B09F78F0074BED7 /* Transition Delegate */ = {
-			isa = PBXGroup;
-			children = (
-				1CE5253A1B09F78F0074BED7 /* AnimatedTransitioning.h */,
-				1CE5253B1B09F78F0074BED7 /* AnimatedTransitioning.m */,
-				1CE5253C1B09F78F0074BED7 /* TransitionDelegate.h */,
-				1CE5253D1B09F78F0074BED7 /* TransitionDelegate.m */,
-			);
-			path = "Transition Delegate";
-			sourceTree = "<group>";
-		};
 		1CE525461B09FCCD0074BED7 /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
@@ -669,7 +651,6 @@
 				1C70C6781B063ECC00E3E422 /* CTJsonCurrency.m in Sources */,
 				1C70C6CB1B0640AC00E3E422 /* DateUtilities.m in Sources */,
 				1C33142D1B0600FB007DC310 /* main.m in Sources */,
-				1CE5253F1B09F78F0074BED7 /* TransitionDelegate.m in Sources */,
 				1C70C6CF1B0640AC00E3E422 /* NSError+Additions.m in Sources */,
 				1C2A53701B0A53D10002118B /* CTItemPickerViewController.m in Sources */,
 				1CE525381B09F7460074BED7 /* CTGUIUtils.m in Sources */,
@@ -677,7 +658,6 @@
 				1CE525291B0686770074BED7 /* NSNumber+PercentageAdditions.m in Sources */,
 				1C70C6E81B064C6A00E3E422 /* JsonResponseContainer.m in Sources */,
 				1C33142A1B0600FB007DC310 /* CTAppDelegate.m in Sources */,
-				1CE5253E1B09F78F0074BED7 /* AnimatedTransitioning.m in Sources */,
 				1CE525191B0665C60074BED7 /* CTUtcDatePropertyTransformer.m in Sources */,
 				1C70C6C61B0640AC00E3E422 /* NSData+Extensions.m in Sources */,
 				1C70C6921B063FB600E3E422 /* JsonRemoteOperation.m in Sources */,

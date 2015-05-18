@@ -77,38 +77,19 @@ static NSString * const CTServiceMethodHistory                      = @"historic
 }
 
 - (NSObject <Result> *)getCurrencyHistoricalRatesFrom:(NSString *)from to:(NSString *)to date:(NSDate *)date error:(NSError **)anError {
-    NSError *error = nil;
-    
     CTGetCurrencyHistoryRequest *request = [CTGetCurrencyHistoryRequest new];
     
     request.from = from;
     request.to = to;
     request.apiKey = CTServiceApiKey;
     request.date = date;
-    
-    NSObject<Result> *result = [self callServiceMethod:CTServiceMethodHistory
-                                      requestObject:request
-                                      responseClass:[CTGetCurrencyHistoryResponse class]
-                                               type:HTTPMethodGET
-                                              error:&error];
-    
-    CheckErrorAndReturn(error, anError, nil);
 
     
-    if (result) {
-        CTGetCurrencyHistoryResponse * response = (CTGetCurrencyHistoryResponse*)result;
-        
-        NSString *targetDate = [DateUtilities stringSqlDateFromDate:date];
-        NSDictionary *currencyRates = response.rates[targetDate];
-        
-        response.date = [[[response entityDescription] propertyTransformerForLocalKey:@"utctime"] localFromRemoteValue:currencyRates[@"utctime"]];
-        response.rate = [[[response entityDescription] propertyTransformerForLocalKey:@"rate"] localFromRemoteValue:currencyRates[@"rate"]];
-        
-        response.rates = nil;
-    }
-    
-    
-    return result;
+    return [self callServiceMethod:CTServiceMethodHistory
+                     requestObject:request
+                     responseClass:[CTGetCurrencyHistoryResponse class]
+                              type:HTTPMethodGET
+                             error:anError];
 }
 
 @end
