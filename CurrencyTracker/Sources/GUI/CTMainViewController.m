@@ -215,7 +215,7 @@
         [self.pickerController setCompletion:^(id object) {
             CoreService.defaultDirection = object;
             [selfWeak refresh];
-            [selfWeak togglePickerController:NO animated:YES];
+            //[selfWeak togglePickerController:NO animated:YES];
         }];
         
         CGRect frame = self.pickerContainerView.bounds;
