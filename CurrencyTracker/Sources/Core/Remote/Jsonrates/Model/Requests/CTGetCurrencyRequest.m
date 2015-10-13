@@ -15,4 +15,13 @@
 @synthesize from;
 @synthesize to;
 
+
+
++ (void)setUpEntityDescription:(RemoteEntityDescription *)entityDescription {
+    [super setUpEntityDescription:entityDescription];
+    [entityDescription addPropertyTransformersByLocalKey:@{@"apiKey" : @"access_key"}];
+    [entityDescription addPropertyTransformersByLocalKey:@{@"from"   : @"source"}];
+    [entityDescription addPropertyTransformersByLocalKey:@{@"to"     : @"currencies"}];
+}
+
 @end

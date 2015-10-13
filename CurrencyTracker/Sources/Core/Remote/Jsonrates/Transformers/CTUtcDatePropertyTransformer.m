@@ -10,7 +10,7 @@
 #import "DateUtilities.h"
 
 
-NSString * const CTJsonratesDateFormat = @"yyyy-MM-dd'T'HH:mm:ssZ";
+NSString * const CTJsonratesDateFormat = @"yyyy-MM-dd";
 
 @implementation CTUtcDatePropertyTransformer
 
@@ -50,3 +50,27 @@ id CTUtcDateTransformerCreate(NSString *remoteKey) {
 id CTDateOnlyTransformerCreate(NSString *remoteKey) {
     return [CTDateOnlyPropertyTransformer propertyTransformerWithRemoteKey:remoteKey];
 }
+
+
+
+@implementation CTUnixTSPropertyTransformer
+
+- (NSDate *)localFromRemoteValue:(NSNumber *)value {
+    return [NSDate dateWithTimeIntervalSince1970:value.integerValue];
+}
+
+- (NSNumber *)remoteFromLocalValue:(NSDate *)value {
+    return @(value.timeIntervalSince1970);
+}
+
+@end
+
+
+
+id CTUnixTSTransformerCreate(NSString *remoteKey) {
+    return [CTUnixTSPropertyTransformer propertyTransformerWithRemoteKey:remoteKey];
+}
+
+
+
+

@@ -10,13 +10,6 @@
 
 @implementation NSNumber (PercentageAdditions)
 
-/*
- 
- "kPersent0" = "процентов";
- "kPersent1" = "процент";
- "kPersent2" = "процента";
- 
- */
 
 - (NSString *)localizedPercentage {
     NSString *percentKey = @"kPersent";

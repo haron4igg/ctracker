@@ -11,7 +11,4 @@
 #import "CTJsonError.h"
 
 @interface CTGetCurrencyHistoryResponse : CTJsonCurrency <Result, CTJsonError>
-
-@property (nonatomic) NSDictionary *rates;
-
 @end

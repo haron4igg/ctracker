@@ -21,12 +21,11 @@
 
 #import "PropertyTransformer.h"
 
+static NSString * const CTServiceURLString                          = @"http://apilayer.net/api/";
+static NSString * const CTServiceApiKey                             = @"961cc99ba572057b6c28c612fd2255fa";
 
-static NSString * const CTServiceURLString                          = @"http://jsonrates.com/";
-static NSString * const CTServiceApiKey                             = @"jr-99b86e7086e988bec638a2a6557aec57";
-
-static NSString * const CTServiceMethodGet                          = @"get/";
-static NSString * const CTServiceMethodHistory                      = @"historical/";
+static NSString * const CTServiceMethodGet                          = @"live";
+static NSString * const CTServiceMethodHistory                      = @"historical";
 
 
 @implementation CTJsonratesRemoteManager
@@ -69,11 +68,16 @@ static NSString * const CTServiceMethodHistory                      = @"historic
     request.to = to;
     request.apiKey = CTServiceApiKey;
     
-    return [self callServiceMethod:CTServiceMethodGet
-                     requestObject:request
-                     responseClass:[CTGetCurrencyResponse class]
-                              type:HTTPMethodGET
-                             error:anError];
+    CTGetCurrencyResponse *response = [self callServiceMethod:CTServiceMethodGet
+                                                requestObject:request
+                                                responseClass:[CTGetCurrencyResponse class]
+                                                         type:HTTPMethodGET
+                                                        error:anError];
+    
+    response.from = from;
+    response.to = to;
+    
+    return response;
 }
 
 - (NSObject <Result> *)getCurrencyHistoricalRatesFrom:(NSString *)from to:(NSString *)to date:(NSDate *)date error:(NSError **)anError {
@@ -84,12 +88,16 @@ static NSString * const CTServiceMethodHistory                      = @"historic
     request.apiKey = CTServiceApiKey;
     request.date = date;
 
+    CTGetCurrencyHistoryResponse *response = [self callServiceMethod:CTServiceMethodHistory
+                                                       requestObject:request
+                                                       responseClass:[CTGetCurrencyHistoryResponse class]
+                                                                type:HTTPMethodGET
+                                                               error:anError];
     
-    return [self callServiceMethod:CTServiceMethodHistory
-                     requestObject:request
-                     responseClass:[CTGetCurrencyHistoryResponse class]
-                              type:HTTPMethodGET
-                             error:anError];
+    response.from = from;
+    response.to = to;
+    
+    return response;
 }
 
 @end

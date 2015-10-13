@@ -215,7 +215,6 @@
         [self.pickerController setCompletion:^(id object) {
             CoreService.defaultDirection = object;
             [selfWeak refresh];
-            //[selfWeak togglePickerController:NO animated:YES];
         }];
         
         CGRect frame = self.pickerContainerView.bounds;
@@ -224,7 +223,6 @@
         [self.pickerContainerView addSubview:self.pickerController.view];
         [self addChildViewController:self.pickerController];        
         
-        //self.pickerContainerView.hidden = NO;
         self.closePickerGestureRecognizer = [UITapGestureRecognizer new];
         self.closePickerGestureRecognizer.cancelsTouchesInView = NO;
         self.closePickerGestureRecognizer.delegate = self;
@@ -250,8 +248,6 @@
                 [self.pickerController.view removeFromSuperview];
                 self.pickerController = nil;
             }
-            //self.pickerContainerView.hidden = YES;
-            
         };
     }
     
@@ -273,20 +269,6 @@
                                  completion_block();
                              }
                          }];
-        /*
-        [UIView animateWithDuration:0.3
-                              delay:0
-                            options:UIViewAnimationOptionCurveEaseOut
-                         animations:^{
-                             if (animation_block) {
-                                 animation_block();
-                             }
-                             [self.view layoutIfNeeded];
-                         } completion:^(BOOL finished) {
-                             if(completion_block) {
-                                 completion_block();
-                             }
-                         }];*/
     } else if(completion_block) {
         animation_block();
         completion_block();
@@ -296,18 +278,6 @@
 - (IBAction)showCurrencySelector:(id)sender {
     [self togglePickerController:!self.pickerController
                         animated:YES];
-//    
-//    CTDataPickerController *directionPicker = [[CTDataPickerController alloc] init];
-//    
-//    directionPicker.items = CoreService.availableDirections;
-//    directionPicker.selectedItem = CoreService.defaultDirection;
-//    
-//    [directionPicker setTitleGetter:^NSString *(NSObject<CTConvertDirection>* direction) {
-//        return [NSString stringWithFormat:@"kMVDirectionFormat".localizedString, direction.from.uppercaseString, direction.to.uppercaseString];
-//    }];
-//
-//    directionPicker.modalPresentationStyle = UIModalPresentationCurrentContext;
-//    [self presentViewController:directionPicker animated:YES completion:nil];
 }
 
 #pragma mark - Delegate

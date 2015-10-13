@@ -16,6 +16,7 @@
 
 @implementation CTJsonCurrency
 
+@synthesize quotes;
 @synthesize from;
 @synthesize to;
 @synthesize rate;
@@ -25,9 +26,16 @@
     [super setUpEntityDescription:entityDescription];
     
     [entityDescription addPropertyTransformersByLocalKey:@{
-                                                                @"date" : CTUtcDateTransformerCreate(@"utctime"),
+                                                                @"date" : CTUnixTSTransformerCreate(@"timestamp"),
                                                                 @"rate" : CTDoubleTransformerCreate(nil)
                                                            }];
 }
+
+
+- (void)awakeFromMapping {
+    id entityDesc = [self entityDescription];
+    self.rate = [[entityDesc propertyTransformerForLocalKey:@"rate"] localFromRemoteValue:[[self.quotes allValues] firstObject]];
+}
+
 
 @end

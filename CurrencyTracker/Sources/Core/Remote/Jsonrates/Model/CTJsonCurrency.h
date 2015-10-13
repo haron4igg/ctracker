@@ -11,5 +11,6 @@
 
 @interface CTJsonCurrency : JsonEntity <CTCurrency>
 
+@property (nonatomic, strong) NSDictionary *quotes;
 
 @end

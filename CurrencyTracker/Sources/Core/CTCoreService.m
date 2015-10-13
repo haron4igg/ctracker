@@ -76,12 +76,12 @@ static CTCoreService *_service;
 - (NSArray *)availableDirections {
     if (!_availableDirections) {
         _availableDirections = @[
-                                 CTConvertDirectionCreate(@"USD", @"RUB"),
+                                 CTConvertDirectionCreate(@"USD", @"UAH"),
                                  CTConvertDirectionCreate(@"USD", @"EUR"),
-                                 CTConvertDirectionCreate(@"EUR", @"RUB"),
-                                 CTConvertDirectionCreate(@"EUR", @"USD"),
-                                 CTConvertDirectionCreate(@"RUB", @"USD"),
-                                 CTConvertDirectionCreate(@"RUB", @"EUR")
+                                 //CTConvertDirectionCreate(@"EUR", @"UAH"),
+                                 //CTConvertDirectionCreate(@"EUR", @"USD"),
+                                 //CTConvertDirectionCreate(@"UAH", @"USD"),
+                                 //CTConvertDirectionCreate(@"UAH", @"EUR")
                                  ];
     }
     return _availableDirections;
@@ -94,7 +94,7 @@ static CTCoreService *_service;
         if (serrializedData) {
             _defaultDirection = [NSKeyedUnarchiver unarchiveObjectWithData:serrializedData];
         } else {
-            self.defaultDirection = CTConvertDirectionCreate(@"RUB", @"USD");
+            self.defaultDirection = CTConvertDirectionCreate(@"USD", @"UAH");
         }
     }
     return _defaultDirection;

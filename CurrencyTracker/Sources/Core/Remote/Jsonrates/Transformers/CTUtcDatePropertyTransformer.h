@@ -22,3 +22,12 @@ id CTUtcDateTransformerCreate(NSString *remoteKey);
 @end
 
 id CTDateOnlyTransformerCreate(NSString *remoteKey);
+
+
+
+@interface CTUnixTSPropertyTransformer : PropertyTransformer
+
+@end
+
+
+id CTUnixTSTransformerCreate(NSString *remoteKey);
